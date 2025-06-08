@@ -1,5 +1,5 @@
 
-import { Github, Linkedin, Mail, Download, ArrowDown } from 'lucide-react';
+import { ArrowDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Hero = () => {
@@ -11,32 +11,6 @@ const Hero = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Left side - Text content */}
           <div className="space-y-6 lg:space-y-8 order-2 lg:order-1">
-            {/* Social Links - Vertical on left for desktop only */}
-            <div className="flex flex-col space-y-6 fixed left-8 top-1/2 transform -translate-y-1/2 z-20 hidden xl:flex">
-              <a 
-                href="https://github.com/Siddharth-2323"
-                className="w-12 h-12 bg-background border border-border rounded-lg flex items-center justify-center text-muted-foreground hover:text-foreground hover:bg-primary/10 transition-all duration-300 shadow-lg"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Github size={20} />
-              </a>
-              <a 
-                href="https://linkedin.com/in/siddharthabhimanyu"
-                className="w-12 h-12 bg-background border border-border rounded-lg flex items-center justify-center text-muted-foreground hover:text-foreground hover:bg-primary/10 transition-all duration-300 shadow-lg"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Linkedin size={20} />
-              </a>
-              <a 
-                href="mailto:siddharthabhi2301@gmail.com"
-                className="w-12 h-12 bg-background border border-border rounded-lg flex items-center justify-center text-muted-foreground hover:text-foreground hover:bg-primary/10 transition-all duration-300 shadow-lg"
-              >
-                <Mail size={20} />
-              </a>
-            </div>
-
             <div className="space-y-4">
               <h1 className="text-3xl sm:text-4xl lg:text-6xl xl:text-7xl font-bold leading-tight">
                 Hello, I'm{' '}
@@ -47,39 +21,19 @@ const Hero = () => {
               </h1>
             </div>
 
-            <div className="flex flex-wrap gap-4 pt-4">
+            <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <Button size="lg" className="group">
                 <a href="#projects" className="flex items-center space-x-2">
                   <span>View Projects</span>
                   <ArrowDown size={16} className="group-hover:translate-y-1 transition-transform" />
                 </a>
               </Button>
-            </div>
-
-            {/* Mobile social links */}
-            <div className="flex space-x-6 pt-4 xl:hidden">
-              <a 
-                href="https://github.com/Siddharth-2323"
-                className="text-muted-foreground hover:text-foreground transition-colors group"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Github size={24} className="group-hover:scale-110 transition-transform" />
-              </a>
-              <a 
-                href="https://linkedin.com/in/siddharthabhimanyu"
-                className="text-muted-foreground hover:text-foreground transition-colors group"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Linkedin size={24} className="group-hover:scale-110 transition-transform" />
-              </a>
-              <a 
-                href="mailto:siddharthabhi2301@gmail.com"
-                className="text-muted-foreground hover:text-foreground transition-colors group"
-              >
-                <Mail size={24} className="group-hover:scale-110 transition-transform" />
-              </a>
+              
+              <Button variant="outline" size="lg" className="sm:hidden">
+                <a href="https://tinyurl.com/Siddharth-Resume-2025" target="_blank" rel="noopener noreferrer">
+                  Resume
+                </a>
+              </Button>
             </div>
           </div>
 
@@ -96,11 +50,11 @@ const Hero = () => {
               <div className="absolute top-1/2 -left-8 bg-card border border-border rounded-lg px-3 py-2 shadow-lg z-10">
                 <span className="text-sm font-medium">React Native</span>
               </div>
-              <div className="absolute -bottom-8 left-1/4 bg-card border border-border rounded-lg px-3 py-2 shadow-lg z-10">
+              <div className="absolute -bottom-8 right-1/4 bg-card border border-border rounded-lg px-3 py-2 shadow-lg z-10">
                 <span className="text-sm font-medium">MongoDB</span>
               </div>
               
-              {/* Main image container - removed background gradient */}
+              {/* Main image container */}
               <div className="relative overflow-hidden rounded-3xl p-2">
                 <img
                   src="/lovable-uploads/14221c8c-d929-492b-b93f-aab40dc7a776.png"

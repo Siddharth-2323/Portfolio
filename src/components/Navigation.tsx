@@ -1,6 +1,6 @@
 
 import { useState } from 'react';
-import { Menu, X, Github, Linkedin, Mail, Download } from 'lucide-react';
+import { Menu, X, Download } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Navigation = () => {
@@ -35,23 +35,14 @@ const Navigation = () => {
             ))}
           </div>
 
-          {/* Resume Button and Social Links */}
-          <div className="hidden md:flex items-center space-x-4">
+          {/* Resume Button - Desktop */}
+          <div className="hidden sm:flex items-center">
             <Button variant="outline" size="sm" asChild>
               <a href="https://tinyurl.com/Siddharth-Resume-2025" target="_blank" rel="noopener noreferrer">
                 <Download size={16} className="mr-2" />
                 Resume
               </a>
             </Button>
-            <a href="https://github.com/Siddharth-2323" className="text-muted-foreground hover:text-foreground transition-colors" target="_blank" rel="noopener noreferrer">
-              <Github size={20} />
-            </a>
-            <a href="https://linkedin.com/in/siddharthabhimanyu" className="text-muted-foreground hover:text-foreground transition-colors" target="_blank" rel="noopener noreferrer">
-              <Linkedin size={20} />
-            </a>
-            <a href="mailto:siddharthabhi2301@gmail.com" className="text-muted-foreground hover:text-foreground transition-colors">
-              <Mail size={20} />
-            </a>
           </div>
 
           {/* Mobile menu button */}
@@ -79,23 +70,6 @@ const Navigation = () => {
                   {item.name}
                 </a>
               ))}
-              <Button variant="outline" size="sm" asChild className="w-fit">
-                <a href="https://tinyurl.com/Siddharth-Resume-2025" target="_blank" rel="noopener noreferrer">
-                  <Download size={16} className="mr-2" />
-                  Resume
-                </a>
-              </Button>
-              <div className="flex space-x-4 pt-4">
-                <a href="https://github.com/Siddharth-2323" className="text-muted-foreground hover:text-foreground" target="_blank" rel="noopener noreferrer">
-                  <Github size={20} />
-                </a>
-                <a href="https://linkedin.com/in/siddharthabhimanyu" className="text-muted-foreground hover:text-foreground" target="_blank" rel="noopener noreferrer">
-                  <Linkedin size={20} />
-                </a>
-                <a href="mailto:siddharthabhi2301@gmail.com" className="text-muted-foreground hover:text-foreground">
-                  <Mail size={20} />
-                </a>
-              </div>
             </div>
           </div>
         )}

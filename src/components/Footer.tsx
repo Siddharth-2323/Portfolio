@@ -1,5 +1,5 @@
 
-import { Github, Linkedin, Mail, Heart } from 'lucide-react';
+import { Github, Linkedin, Mail } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -80,12 +80,9 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-border mt-8 sm:mt-12 pt-6 sm:pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <p className="text-muted-foreground text-xs sm:text-sm text-center md:text-left">
+          <div className="flex justify-center">
+            <p className="text-muted-foreground text-xs sm:text-sm text-center">
               © {currentYear} Siddharth Abhimanyu Thirupathi. All rights reserved.
-            </p>
-            <p className="text-muted-foreground text-xs sm:text-sm flex items-center">
-              Made with <Heart className="w-4 h-4 mx-1 text-red-500" /> using React & Tailwind CSS
             </p>
           </div>
         </div>
