@@ -49,25 +49,29 @@ const Projects = () => {
       title: 'Tic-Tac-Toe',
       tech: ['JavaScript', 'HTML', 'CSS'],
       description: 'Classic game with AI opponent',
-      github: 'https://github.com/Siddharth-2323/Tic-Tac-Toe'
+      github: 'https://github.com/Siddharth-2323/Tic-Tac-Toe',
+      link: 'https://siddharth-2323.github.io/Tic-Tac-Toe/'
     },
     {
       title: 'Rock Paper Scissors',
       tech: ['React.js', 'CSS3'],
       description: 'Interactive game with animations',
-      github: 'https://github.com/Siddharth-2323/RockPaperScissor2'
+      github: 'https://github.com/Siddharth-2323/RockPaperScissor2',
+      link: 'https://siddharth-2323.github.io/saas/'
     },
     {
       title: 'Password Generator',
       tech: ['JavaScript', 'Crypto'],
       description: 'Secure password generation tool',
-      github: 'https://github.com/Siddharth-2323/React-PasswordGenerator'
+      github: 'https://github.com/Siddharth-2323/React-PasswordGenerator',
+      link: 'https://react-password-generator1-siddharth-abhimanyus-projects.vercel.app/'
     },
     {
       title: 'Currency Converter',
       tech: ['JavaScript', 'API'],
       description: 'Real-time currency conversion',
-      github: 'https://github.com/Siddharth-2323/CurrencyConverter'
+      github: 'https://github.com/Siddharth-2323/CurrencyConverter',
+      link: 'https://react-currency-converter-git-main-siddharth-abhimanyus-projects.vercel.app/'
     }
   ];
 
@@ -160,6 +164,11 @@ const Projects = () => {
                     <Button size="sm" variant="ghost" className="p-2" asChild>
                       <a href={project.github} target="_blank" rel="noopener noreferrer">
                         <Github className="w-4 h-4" />
+                      </a>
+                    </Button>
+                    <Button size="sm" variant="ghost" className="p-2" asChild>
+                      <a href={project.link} target="_blank" rel="noopener noreferrer">
+                        <ExternalLink className="w-4 h-4" />
                       </a>
                     </Button>
                   </div>
