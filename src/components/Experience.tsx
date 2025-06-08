@@ -15,7 +15,7 @@ const Experience = () => {
         'Led development of 8+ modules serving 5000+ active users',
         'Optimized database queries reducing load time by 40%'
       ],
-      icon: <Code2 className="w-6 h-6" />,
+      iconImage: '/lovable-uploads/0dfe4255-6507-44b2-a262-5e7555f9594c.png',
       color: 'bg-blue-500/10 text-blue-600',
     },
     {
@@ -29,7 +29,7 @@ const Experience = () => {
         'Developed comprehensive curriculum for full-stack development',
         'Achieved 95% participant satisfaction rate'
       ],
-      icon: <Users className="w-6 h-6" />,
+      iconImage: '/lovable-uploads/64bcf814-e6cf-46fb-9e72-fc81851109d3.png',
       color: 'bg-green-500/10 text-green-600',
     },
     {
@@ -43,7 +43,7 @@ const Experience = () => {
         'Managed logistics for multiple gaming events',
         'Implemented real-time scoring systems'
       ],
-      icon: <Trophy className="w-6 h-6" />,
+      iconImage: '/lovable-uploads/9480f7a1-c1ed-4919-b8e8-02a8cfbd0215.png',
       color: 'bg-purple-500/10 text-purple-600',
     }
   ];
@@ -70,7 +70,11 @@ const Experience = () => {
                   {/* Left side - Company info */}
                   <div className="bg-muted/20 p-8 lg:p-12">
                     <div className={`inline-flex items-center justify-center w-12 h-12 rounded-lg ${exp.color} mb-6`}>
-                      {exp.icon}
+                      <img 
+                        src={exp.iconImage} 
+                        alt={exp.company} 
+                        className="w-8 h-8 object-contain"
+                      />
                     </div>
                     <h3 className="text-2xl font-bold mb-2">{exp.company}</h3>
                     <p className="text-lg font-semibold text-primary mb-2">{exp.title}</p>

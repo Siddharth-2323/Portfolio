@@ -79,7 +79,7 @@ const Footer = () => {
             <div className="space-y-2 text-muted-foreground">
               <p>siddharthabhi2301@gmail.com</p>
               <p>+91 6302701309</p>
-              <p>Thanjavur, Tamil Nadu, India</p>
+              <p>Hyderabad, Telangana, India</p>
             </div>
           </div>
         </div>

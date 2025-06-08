@@ -3,34 +3,26 @@ import { User, GraduationCap, Award, Code } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 
 const About = () => {
-  const skills = {
-    technical: [
-      { name: 'React.js', level: 85 },
-      { name: 'Node.js', level: 80 },
-      { name: 'MongoDB', level: 75 },
-      { name: 'Express.js', level: 80 },
-      { name: 'JavaScript', level: 90 },
-      { name: 'C/C++', level: 85 },
-      { name: 'Java', level: 75 },
-      { name: 'HTML/CSS', level: 95 },
-      { name: 'Tailwind CSS', level: 90 },
-      { name: 'Git', level: 85 },
-    ],
-    soft: [
-      'Public Speaking',
-      'Critical Thinking',
-      'Event Management',
-      'Team Leadership',
-      'Problem Solving',
-      'Communication',
-    ]
-  };
+  const technicalSkills = [
+    'Full Stack Development', 'API Management', 'App Architecture', 'Python', 'C', 'C++', 
+    'Java', 'JavaScript', 'SQL', 'NoSQL', 'React.js', 'React Native', 'Node.js', 
+    'Express.js', 'HTML5', 'CSS3', 'Tailwind CSS', 'Bootstrap', 'Git', 'GitHub', 'Linux'
+  ];
+
+  const softSkills = [
+    'Public Speaking',
+    'Critical Thinking',
+    'Event Management',
+    'Team Leadership',
+    'Problem Solving',
+    'Communication',
+  ];
 
   const education = [
     {
       institution: 'SASTRA University',
       degree: 'B.Tech in Information & Communication Technology',
-      year: 'Currently in 2nd Year',
+      year: 'Currently in 3rd Year',
       grade: 'CGPA: 8.11',
       icon: <GraduationCap className="w-6 h-6" />
     },
@@ -74,7 +66,7 @@ const About = () => {
                 </div>
                 <div className="space-y-4 text-muted-foreground">
                   <p className="text-lg leading-relaxed">
-                    With 4+ years of experience in development, I specialize in creating intuitive, 
+                    With over a year of dedicated experience in development, I specialize in creating intuitive, 
                     user-focused applications that solve real-world problems and deliver seamless digital experiences.
                   </p>
                   <p className="text-lg leading-relaxed">
@@ -94,19 +86,10 @@ const About = () => {
                   </div>
                   <h3 className="text-2xl font-semibold">Technical Skills</h3>
                 </div>
-                <div className="space-y-4">
-                  {skills.technical.map((skill) => (
-                    <div key={skill.name} className="space-y-2">
-                      <div className="flex justify-between">
-                        <span className="font-medium">{skill.name}</span>
-                        <span className="text-muted-foreground">{skill.level}%</span>
-                      </div>
-                      <div className="w-full bg-muted rounded-full h-2">
-                        <div 
-                          className="bg-primary h-2 rounded-full transition-all duration-1000"
-                          style={{ width: `${skill.level}%` }}
-                        ></div>
-                      </div>
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+                  {technicalSkills.map((skill) => (
+                    <div key={skill} className="bg-muted/50 rounded-lg px-3 py-2 text-center font-medium text-sm hover:bg-primary/10 transition-colors">
+                      {skill}
                     </div>
                   ))}
                 </div>
@@ -150,7 +133,7 @@ const About = () => {
               <CardContent className="p-0">
                 <h3 className="text-2xl font-semibold mb-6">Soft Skills</h3>
                 <div className="grid grid-cols-2 gap-3">
-                  {skills.soft.map((skill) => (
+                  {softSkills.map((skill) => (
                     <div key={skill} className="bg-muted/50 rounded-lg px-4 py-3 text-center font-medium">
                       {skill}
                     </div>
@@ -160,13 +143,7 @@ const About = () => {
             </Card>
 
             {/* Stats */}
-            <div className="grid grid-cols-2 gap-4">
-              <Card className="p-6 text-center">
-                <CardContent className="p-0">
-                  <div className="text-3xl font-bold text-primary mb-2">120%</div>
-                  <p className="text-sm text-muted-foreground">Average increase in performance optimization</p>
-                </CardContent>
-              </Card>
+            <div className="grid grid-cols-1 gap-4">
               <Card className="p-6 text-center">
                 <CardContent className="p-0">
                   <div className="text-3xl font-bold text-primary mb-2">5K+</div>

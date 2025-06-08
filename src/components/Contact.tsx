@@ -47,7 +47,7 @@ const Contact = () => {
     {
       icon: <MapPin className="w-6 h-6" />,
       label: 'Location',
-      value: 'Thanjavur, Tamil Nadu, India',
+      value: 'Hyderabad, Telangana, India',
       href: '#'
     }
   ];
@@ -189,22 +189,6 @@ const Contact = () => {
                   Send Message
                 </Button>
               </form>
-            </CardContent>
-          </Card>
-        </div>
-
-        {/* Bottom CTA */}
-        <div className="text-center mt-16">
-          <Card className="max-w-2xl mx-auto p-8 bg-gradient-to-r from-primary/5 to-primary/10">
-            <CardContent className="p-0">
-              <h3 className="text-2xl font-bold mb-4">Ready to start your project?</h3>
-              <p className="text-muted-foreground mb-6">
-                Let's turn your ideas into reality. I'm here to help you build something extraordinary.
-              </p>
-              <Button size="lg">
-                <Mail className="w-5 h-5 mr-2" />
-                Schedule a Call
-              </Button>
             </CardContent>
           </Card>
         </div>
